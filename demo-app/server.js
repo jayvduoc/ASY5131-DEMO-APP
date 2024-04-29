@@ -38,6 +38,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to demo application Francisco Bilbao." });
 });
 
+app.get("/user/list", (req, res) => {
+  res.json({ message: "Los usuarios son: Francisco Bilbao, Esteban Tamayo, Lola Mento" });
+});
+
 require("./app/routes/turorial.routes")(app);
 
 // set port, listen for requests
