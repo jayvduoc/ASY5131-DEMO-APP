@@ -1,25 +1,31 @@
-# Docker Compose Nodejs and MongoDB example
+# ASY5131 - INTEGRACION DE PLATAFORMAS
 
-## Run the System
-We can easily run the whole with only a single command:
-```bash
-docker compose up
+<p align="left" style="text-align:left;">
+  <a href="https://www.duoc.cl/">
+    <img alt="DUOC" src="img/logo.png" width="1040"/>
+  </a>
+</p>
+
+## Pre-requisitos
+
+Ingresar al sitio de [play-with-docker](https://www.docker.com/play-with-docker/), para ello deben tener una cuenta en docker, si no la tienen, pueden crearla [aqui](https://hub.docker.com/signup)
+
+## Implementación Docker
+
+1.- Clonamos el repositorio git
+
+```
+git clone https://github.com/Fundacion-Instituto-Profesional-Duoc-UC/ASY5131-DEMO-APP
 ```
 
-Docker will pull the MongoDB and Node.js images (if our machine does not have it before).
+2.- Ingresamos a la carpeta del proyecto
 
-The services can be run on the background with command:
-```bash
-docker compose up -d
+```
+cd ASY5131-DEMO-APP
 ```
 
-## Stop the System
-Stopping all the running containers is also simple with a single command:
-```bash
-docker compose down
-```
+3.- Deployamos el Stack de NodeJS + MongoDB
 
-If you need to stop and remove all containers, networks, and all images used by any service in <em>docker-compose.yml</em> file, use the command:
-```bash
-docker compose down --rmi all
+```
+docker-compose up -d
 ```
